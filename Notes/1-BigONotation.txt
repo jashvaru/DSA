@@ -37,3 +37,10 @@ Example: Solving the traveling salesman problem using brute force.
 Factorial Time (O(n!)):
 The algorithm's time grows as the factorial of the input size.
 Example: Generating all permutations of a set.
+
+Space complexity It is a measure of the amount of memory (space) an algorithm uses relative to the size of its input.
+It includes both:
+Auxiliary space: The extra memory or temporary space the algorithm needs for its execution (e.g., variables, data structures).
+Input space: The memory occupied by the input data.
+
+It is expressed using Big O notation, similar to time complexity, and helps evaluate how efficiently an algorithm uses memory resources.
