@@ -1,0 +1,39 @@
+Time complexity - Itnis a measure used in computer science to estimate the amount of time an algorithm takes to run,
+relative to the size of its input. It provides an upper bound on the running time for the worst-case scenario, allowing
+developers to evaluate and compare the efficiency of different algorithms.
+
+Time complexity is expressed using Big O notation, which describes the relationship between the input size (n) and
+the number of basic operations performed by the algorithm.
+
+Common Time Complexities
+Constant Time (𝑂(1)):
+The algorithm takes the same amount of time regardless of the input size.
+Example: Accessing an element in an array by index.
+
+Logarithmic Time (O(logn)):
+The algorithm reduces the problem size with each step.
+Example: Binary search.
+
+Linear Time (O(n)):
+The time taken grows linearly with the input size.
+Example: Traversing a list.
+
+Linearithmic Time (O(nlogn)):
+Often seen in efficient sorting algorithms.
+Example: Merge sort, heap sort.
+
+Quadratic Time (O(n^2)):
+The time taken grows quadratically with the input size.
+Example: Nested loops iterating over an array.
+
+Cubic Time (O(n^3)):
+The time taken grows cubically with the input size.
+Example: Algorithms with three nested loops.
+
+Exponential Time (O(2n)):
+The algorithm's time doubles with each additional input element.
+Example: Solving the traveling salesman problem using brute force.
+
+Factorial Time (O(n!)):
+The algorithm's time grows as the factorial of the input size.
+Example: Generating all permutations of a set.
