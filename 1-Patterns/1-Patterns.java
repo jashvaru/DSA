@@ -1,7 +1,7 @@
 class Patterns {
     public static void main(String[] args) { 
         Patterns patterns = new Patterns();
-        patterns.pattern13(5);
+        patterns.pattern14(5);
     }
 
     public void pattern1(int n) {
@@ -193,4 +193,24 @@ class Patterns {
             11 12 13 14 15
          */
     }
+    public void pattern14(int n) {
+        
+        for (int i = 0; i < n; i++) {
+            char start = 'A';
+            for (int j = 0; j <=i; j++) {
+                System.out.print(start + " ");
+                start++;
+            }
+
+            System.out.println();
+        }
+        /* 
+        A
+        A B
+        A B C
+        A B C D
+        A B C D E
+         */
+    }
+    
 }
