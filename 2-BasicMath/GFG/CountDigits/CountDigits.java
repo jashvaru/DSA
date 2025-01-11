@@ -1,5 +1,3 @@
-package GFG.CountDigits;
-
 public class CountDigits {
     public static void main(String[] args) {
         int n = 12;
@@ -30,5 +28,7 @@ represented using log10 as we are dividing the number with 10. (if divide by 2 i
 Space Complexity
 O(1) - As we are using constant number of variable irrespective of input
 */
+
+//Time take to solve: 10 mins
 
 
