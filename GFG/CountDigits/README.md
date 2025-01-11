@@ -1,7 +1,7 @@
 # Count Digits
 
-<p> Link to the problem statement</p> 
-<a href="https://www.geeksforgeeks.org/problems/count-digits5716/1">Count Digits</a>
+<p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/count-digits5716/1">Count Digits</a></p> 
+
 
 <h2>Problem Description</h2>
 <p>
