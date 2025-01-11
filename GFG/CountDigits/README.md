@@ -1,6 +1,6 @@
 # Count Digits
 
-<h1> Link to the problem statement</h2> 
+<p> Link to the problem statement</p> 
 <a href="https://www.geeksforgeeks.org/problems/count-digits5716/1">Count Digits</a>
 
 <h2>Problem Description</h2>
