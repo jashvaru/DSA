@@ -1,6 +1,6 @@
 <h1>Armstrong Number</h1>
 
-<p> Link to the problem statement - <a href="https://leetcode.com/problems/armstrong-number/description/">Palindrome</a></p>
+<p> Link to the problem statement - <a href="https://leetcode.com/problems/armstrong-number/description/">Armstrong</a></p>
 
 <p>An <strong>Armstrong number</strong> is a number that is equal to the sum of the cubes of its own digits.</p>
 
