@@ -1,4 +1,4 @@
-# Count Digits
+<h1>Count Digits</h1>
 
 <p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/count-digits5716/1">Count Digits</a></p> 
 
