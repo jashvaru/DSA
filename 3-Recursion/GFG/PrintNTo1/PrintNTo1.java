@@ -14,7 +14,7 @@ public class PrintNTo1 {
 }
 
 /*
--let n get subtracted till 1 using recursion and than start to print the values
+-Print the values and let n get subtracted till 1 using recursion
 
 Time complexity 
 O(n) - as func call will go upto n
