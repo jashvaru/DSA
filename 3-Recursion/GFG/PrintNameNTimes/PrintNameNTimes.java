@@ -20,7 +20,7 @@ Time complexity
 O(n) - as func call will go upto n
 
 Space complexity
-O(1) - As we are using constant number of variable irrespective of input 
+O(n) - As each method call will allocate memory to variables upto n 
 */
 
 //Time taken 6 mins
