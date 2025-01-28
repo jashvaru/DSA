@@ -1,6 +1,6 @@
 <h1>Count the Frequency of Numbers in an Array</h1>
 
-<p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0"></a>Frequencies in a Limited Array</p>
+<p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0">Frequencies in a Limited Array</a></p>
 
 <p>You are given an array <code>arr[]</code> containing positive integers. The elements in the array range from <code>1</code> to <code>n</code> (where <code>n</code> is the size of the array). Some numbers may be repeated or absent.</p>
 
