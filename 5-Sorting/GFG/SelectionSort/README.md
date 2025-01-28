@@ -1,6 +1,6 @@
 <h1>Selection Sort Algorithm</h1>
 
-<p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/selection-sort/1"></a>Selection Sort Algorithm</p>
+<p> Link to the problem statement - <a href="https://www.geeksforgeeks.org/problems/selection-sort/1">Selection Sort Algorithm</a></p>
 
 <p>Given an array <code>arr[]</code>, use selection sort to sort the array in increasing order.</p>
 
