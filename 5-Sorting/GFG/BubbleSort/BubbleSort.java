@@ -4,18 +4,25 @@ public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int size = arr.length;
         for(int i = 0; i < size; i++) {
+            boolean didSwap = false;
             for(int j = 0; j < size-i-1; j++) {
                 if(arr[j] > arr[j+1]) {
                     int temp = arr[j];
                     arr[j] = arr[j+1];
-                    arr[j+1] = temp; 
+                    arr[j+1] = temp;
+                    didSwap = true; 
                 }
             }
+            if (!didSwap) {
+                break;
+            }
+            System.out.println("run");
         }
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 1, 3, 9, 7};
+        // int[] arr = {4, 1, 3, 9, 7};
+        int[] arr = {1,2,3,4};
         bubbleSort(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
