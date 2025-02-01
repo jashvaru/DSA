@@ -1,1 +1,1 @@
-<p> Sorting Algo Visualizer - <a href="https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0">Visualgo</a></p>
+<p> Sorting Algo Visualizer - <a href="https://visualgo.net/en/sorting">Visualgo</a></p>
