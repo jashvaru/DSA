@@ -75,7 +75,7 @@ public class MergeSort {
  * hence O(n log2(n))
  * Worst case - O(n log2(n))
  * Avg case - O(n log2(n))
- * Best case - O(n)
+ * Best case - O(n log2(n))
  * 
  * Space Complexity
  * Since we are using temp list of same size as array 
