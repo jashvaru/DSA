@@ -66,7 +66,7 @@ public class QuickSort {
  * 
  * Time Complexity
  * Each level of recursion splits the array into two halves, 
- * leading to a recursion depth of log₂(n). Each level performs O(n) operations for merging.
+ * leading to a recursion depth of log₂(n). Each level performs O(n) operations to sort.
  * 
  * hence O(n log2(n))
  * Worst case - O(n log2(n))
@@ -76,4 +76,6 @@ public class QuickSort {
  * Space Complexity
  * Since we are not using extra variable 
  * O(1)
+ * If we consider stack space for recursion
+ * O(n)
  */
