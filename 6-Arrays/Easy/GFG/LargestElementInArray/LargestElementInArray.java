@@ -1,7 +1,7 @@
 public class LargestElementInArray {
 
     public static int largestElement(int[] arr) {
-        int largest = 0;
+        int largest = arr[0];
 
         for (int i : arr) {
             if(i > largest) {
@@ -13,7 +13,8 @@ public class LargestElementInArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 1, 3, 9, 7};
+        // int[] arr = {4, 1, 3, 9, 7};
+        int[] arr = {-1, -2, -3, -5};
         int largest = largestElement(arr);
         System.out.println("largest: " + largest);
     }
