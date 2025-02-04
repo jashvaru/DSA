@@ -1,4 +1,4 @@
-public class SecondLargestElementInArray {
+/* public class SecondLargestElementInArray {
     
     public static void quickSort(int[] arr, int low, int high) {
         if(low >= high) {
@@ -57,10 +57,59 @@ public class SecondLargestElementInArray {
         int secondLargest = getSecondLargest(arr);
         System.out.println("secondLargest: " + secondLargest);
     }
-}
+} */
 
 /* 
  * Brute Force
+ * -Sort the array using any sorting technique here I am using Quick Sort.
+ * -Ideally the second last element in an array would be second largest if all elements are distinct
+ * and array is sorted in ascending order.
+ * -But there can be possibility that the largest element have multiple values than above step is incorrect.
+ * -To solve it we start comparing largest element of the array to each element of the array
+ * from end[arr.length-2] to front
+ * -If we found a value not equal to largest than that will be second largest in sorted array.
+ * -If all elements in an array is largest than return -1
+ * 
+ * Time Complexity
+ * O(nlogn) + N = (sorting algo + to find second largest)
+ * 
+ * Space Complexity
+ * O(n) or O(logn) if we consider stack space
+ * 
+ * 
+ */
+
+ public class SecondLargestElementInArray {
+    
+    public static int getSecondLargest(int[] arr) {
+        int largest = arr[0];
+        int secondLargest = -1;
+
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i] + " " + secondLargest + " " + largest);
+            if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
+            }
+        }
+        
+        return secondLargest;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 1, 3, 9, 7};
+        int secondLargest = getSecondLargest(arr);
+        System.out.println("secondLargest: " + secondLargest);
+    }
+}
+
+/* 
+ * Better Approach
  * -Sort the array using any sorting technique here I am using Quick Sort.
  * -Ideally the second last element in an array would be second largest if all elements are distinct
  * and array is sorted in ascending order.
