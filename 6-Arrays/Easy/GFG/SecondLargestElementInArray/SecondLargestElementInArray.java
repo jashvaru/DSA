@@ -79,7 +79,7 @@
  * 
  */
 
- public class SecondLargestElementInArray {
+/*  public class SecondLargestElementInArray {
     
     public static int getSecondLargest(int[] arr) {
         int largest = arr[0];
@@ -105,7 +105,7 @@
         int secondLargest = getSecondLargest(arr);
         System.out.println("secondLargest: " + secondLargest);
     }
-}
+} */
 
 /* 
  * Better Approach
@@ -115,6 +115,46 @@
  * 
  * Time Complexity
  * O(n) + O(n) = O(2n) 
+ * 
+ * Space Complexity
+ * O(1)
+ */
+
+ public class SecondLargestElementInArray {
+    
+    public static int getSecondLargest(int[] arr) {
+        int largest = arr[0];
+        int secondLargest = -1;
+
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i] > largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if(arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
+            }
+        }
+        
+        return secondLargest;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 1, 3, 9, 9, 7};
+        int secondLargest = getSecondLargest(arr);
+        System.out.println("secondLargest: " + secondLargest);
+    }
+}
+
+/* 
+ * Optimal Approach
+ * -Initially keep largest as first element of the array and second largest as -1
+ * -Run a loop and if you find an element value greater than the largest tha 
+ * assign largest to second largest and element value to largest
+ * -If the next element is not greater than largest than check if the element is greater than 
+ * second largest and not equal to largest if this satisfies than assign the element to second largest
+ * 
+ * Time Complexity
+ * O(n) 
  * 
  * Space Complexity
  * O(1)
