@@ -110,20 +110,13 @@
 
 /* 
  * Better Approach
- * -Sort the array using any sorting technique here I am using Quick Sort.
- * -Ideally the second last element in an array would be second largest if all elements are distinct
- * and array is sorted in ascending order.
- * -But there can be possibility that the largest element have multiple values than above step is incorrect.
- * -To solve it we start comparing largest element of the array to each element of the array
- * from end[arr.length-2] to front
- * -If we found a value not equal to largest than that will be second largest in sorted array.
- * -If all elements in an array is largest than return -1
+ * -Run a loop to find the largest element in the array.
+ * -Run another loop to find the 2nd largest element which will be less than the largest and not 
+ * equal to largest
  * 
  * Time Complexity
- * O(nlogn) + N = (sorting algo + to find second largest)
+ * O(n) + O(n) = O(2n) 
  * 
  * Space Complexity
- * O(n) or O(logn) if we consider stack space
- * 
- * 
+ * O(1)
  */
