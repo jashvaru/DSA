@@ -1,5 +1,7 @@
 <h1>Rotate Array Right by K Steps</h1>
 
+<p> Link to problem statement - <a href="https://leetcode.com/problems/rotate-array/description/">Rotate Array Right by K Steps</a></p>
+
 <p>Given an integer array <code>nums</code>, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>
 
 <h2>Example 1:</h2>
