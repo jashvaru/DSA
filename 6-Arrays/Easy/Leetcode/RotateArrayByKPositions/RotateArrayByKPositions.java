@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class RotateArrayByKPositions {
 
     public static void rotateArrayByKPositions(int[] arr, int k) {

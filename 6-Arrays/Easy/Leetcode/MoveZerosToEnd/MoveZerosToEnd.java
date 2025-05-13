@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class MoveZerosToEnd {
 
     public static void moveZeroes(int[] nums) {

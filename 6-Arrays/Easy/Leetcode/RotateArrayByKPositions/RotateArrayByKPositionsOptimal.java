@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class RotateArrayByKPositions {
+public class RotateArrayByKPositionsOptimal {
 
     public static void reverse(int start, int end, int[] arr) {
         while(start < end) {
