@@ -22,6 +22,23 @@ public class MissingNumber {
         return i;
     }
 
+    public int findMissingNumberBetter(int[] nums) {
+        int n = nums.length;
+        int[] hashArray = new int[n];
+
+        for(int num : nums) {
+            hashArray[num] = 1;
+        }
+        int i = 0;
+        while (i < n) {
+            if (hashArray[i] != 1) {
+                break;
+            }
+            i++;
+        }
+        return i;
+    }
+
     public int findMissingNumberOpt(int[] nums) {
         int n = nums.length;
         int sumOfN = n*(n+1)/2;
@@ -38,7 +55,7 @@ public class MissingNumber {
         int[] nums = {0, 1, 2};
         // int[] nums = {9,6,4,2,3,5,7,0,1};
         MissingNumber missingNumber = new MissingNumber();
-        int missingNum = missingNumber.findMissingNumberOpt(nums);
+        int missingNum = missingNumber.findMissingNumberBetter(nums);
         System.out.println("Missing num = " + missingNum);
     }
 }
@@ -58,7 +75,23 @@ public class MissingNumber {
  *
  * Space Complexity
  * O(1) - as we are not using any new space
- * 
+ *
+ * Logic
+ * Better Solution
+ * -Create a new array of size n+1 which will be used as hashing array
+ * -The numbers in our main array will act as a index of hashing array, using a loop 
+ * on main array to get the values(index for hashing) mark 1 in hashing array to indicate num is present
+ * -Now we will need to iterate through hashing array to check which index is not yet marked as 1,
+ * that will indicate the missing number.
+ *
+ * Time Complexity
+ * It takes
+ * O(2n) - As will need to loop through array to mark in hashing array and again loop through hashing 
+ * array to get the missing number
+ *
+ * Space Complexity
+ * O(n) - as we are using hashing array
+ *  
  * 
  * Logic
  * Optimal Solution
