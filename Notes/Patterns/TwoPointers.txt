@@ -1,0 +1,15 @@
+-What is the Two Pointers Pattern?
+The two pointers pattern is a common coding technique where you use two variables (pointers) to traverse an array, string, or linked list — often from different directions (start & end) or with different speeds.
+Instead of brute force (using nested loops), it allows you to solve problems more efficiently (usually in O(n) time).
+
+-How It Works
+You set up two indexes (pointers):
+One starting at the beginning.
+One starting at the end (or sometimes both start from the beginning).
+
+Then you move the pointers based on conditions, shrinking or expanding the range until the problem is solved.
+
+Problems solvable
+-Two sum
+-String Palindrom
+-Reverse a string or array
