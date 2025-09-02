@@ -1,0 +1,34 @@
+What is Sliding Window?
+The sliding window technique is a way to process subarrays (or substrings) of an array/string efficiently without recomputing everything again and again.
+Instead of recalculating the sum (or other property) for every subarray, we keep a "window" of elements and slide it forward by adjusting just the changes.
+
+-Analogy
+Think of it like a physical window on a long wall:
+You can see only part of the wall (the window).
+To see the next part, you slide the window to the right (remove from the left, add from the right).
+
+-Example (with array sum)
+Suppose arr = [2, 1, 3, 2, 4] and we want the sum of every subarray of length 3.
+Naive way (O(n·k)):
+[2,1,3] → sum = 6
+[1,3,2] → sum = 6
+[3,2,4] → sum = 9
+(Recalculate sum for each subarray)
+
+Sliding window way (O(n)):
+Start with first window [2,1,3], sum = 6.
+Slide right: remove 2 (leftmost), add 2 (next element) → sum = 6.
+Slide right: remove 1, add 4 → sum = 9.
+We only update with one subtraction + one addition each time → much faster.
+
+-Types of Sliding Window
+Fixed size window
+Example: Find the max sum of any subarray of size k.
+Window size doesn’t change.
+
+Variable size window
+Example: Find the longest subarray with sum ≤ k.
+Window expands and shrinks dynamically depending on conditions (like in your code).
+
+Problems solvable
+-LongestSubArrayWithSumK (Only Positive value)
