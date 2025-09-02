@@ -1,0 +1,24 @@
+-What is Hashing?
+Hashing is a technique in programming to map data to a fixed-size storage (index) using a function called a hash function.
+
+-In simple words:
+You take a piece of data (like a number or string).
+Apply a hash function.
+Get a hash value (usually an integer index).
+Store/retrieve data using that index.
+This makes searching and accessing data very fast (O(1) average).
+
+-Analogy
+Think of a classroom with 100 lockers.
+Each student is assigned a locker based on their roll number.
+Instead of searching all lockers, you go directly to the locker number = roll number.
+That’s what hashing does: direct access instead of searching.
+
+-Real Use Cases of Hashing
+HashMap / HashSet (Java) → Store key-value pairs or unique values with O(1) lookup.
+Counting frequencies (e.g., character count in strings).
+Detect duplicates quickly.
+Password security → cryptographic hashing (MD5, SHA).
+Compilers / Databases → symbol tables, indexing.
+
+So, hashing = using a formula to store & access data quickly.
