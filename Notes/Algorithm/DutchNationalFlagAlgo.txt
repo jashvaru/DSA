@@ -1,0 +1,14 @@
+The Dutch National Flag Algorithm (DNF) is specifically designed for 3 distinct categories (like 0,1,2 or "red, white, blue").
+
+-Why only 3?
+Because the algorithm maintains 3 partitions:
+Left side → elements of the first category (e.g., 0s).
+Middle → elements being checked (e.g., 1s).
+Right side → elements of the last category (e.g., 2s).
+This neat separation works beautifully for exactly three groups.
+
+-Rules
+At each step, check nums[mid]:
+If 0 → swap nums[low] ↔ nums[mid], then low++, mid++.
+If 1 → just mid++ (leave it in middle).
+If 2 → swap nums[mid] ↔ nums[high], then high-- (don’t move mid yet).
