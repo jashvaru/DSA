@@ -1,6 +1,6 @@
 <h1>Sort Colors</h1>
 
-<p> Link to problem statement - <a href="https://leetcode.com/problems/sort-colors/description/">Two Sum</a></p>
+<p> Link to problem statement - <a href="https://leetcode.com/problems/sort-colors/description/">Sort Colors</a></p>
 
 <p>Given an array <code>nums</code> with <code>n</code> objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
 
