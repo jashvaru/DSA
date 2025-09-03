@@ -22,3 +22,6 @@ Password security → cryptographic hashing (MD5, SHA).
 Compilers / Databases → symbol tables, indexing.
 
 So, hashing = using a formula to store & access data quickly.
+
+Problems solvable
+-TwoSum
