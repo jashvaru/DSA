@@ -20,3 +20,6 @@ If current element == candidate, increase count.
 Else decrease count.
 
 At the end → candidate will be the potential majority element.
+
+Problems solvable
+MajorityElement
