@@ -1,0 +1,23 @@
+-What is Kadane’s Algorithm?
+Kadane’s Algorithm is used to find the maximum sum subarray in a given array in O(n) time.
+
+-Problem statement:
+Given an integer array (with positive, negative, or zero values), find the contiguous subarray that has the largest sum.
+
+-Why is it needed?
+The brute force way would be:
+Check all subarrays, calculate their sums → O(n²) or O(n³).
+Kadane’s Algorithm reduces it to O(n).
+
+-How it Works (Intuition)
+We keep track of two things while scanning the array:
+currentSum → maximum sum of the subarray ending at current index.
+maxSum → global maximum found so far.
+
+At each step:
+Add the current element to currentSum.
+If currentSum becomes smaller than the current element itself → restart from current element.
+Update maxSum if currentSum is greater.
+
+Problem solvable
+MaxSubarraySum
